@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Zenelejátszó</title>
+</head>
+<body>
+    <h1>Zenelejátszó</h1>
+    
+    <audio id="audioPlayer" controls>
+        A böngésző nem támogatja az audio elemet.
+    </audio>
+
+    <button id="chooseMusicBtn">Zene Kiválasztása</button>
+    
+    <div id="playlist">
+        <h2>Lejátszási lista</h2>
+        <ul id="playlistList">
+        </ul>
+    </div>
+
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Zene Kiválasztása</h2>
+            <input type="file" id="musicFile" accept=".mp3" multiple>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
